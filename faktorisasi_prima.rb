@@ -22,14 +22,14 @@ def isPrime(x)
 end
 
 prime = 2
-print "Masukkan angka : "
-angka = gets.to_i
+print "Enter a number : "
+number = gets.to_i
 arr_prime = []
-puts "faktorisasi prima dari #{angka} :"
+puts "Faktorial of number #{number} :"
 
-while angka > 1
-    if angka % prime == 0
-        angka /= prime
+while number > 1
+    if number % prime == 0
+        number /= prime
         arr_prime << prime
     else
         prime = nextPrime(prime)
